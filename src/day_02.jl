@@ -57,7 +57,6 @@ function part1(input)
 end
 
 @assert part1(ex) == 150
-
 input = parse_input(inputs_raw)
 @info "Day 2, Part 1:  $(part1(input))"
 
