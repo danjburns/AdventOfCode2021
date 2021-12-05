@@ -32,7 +32,26 @@ forward 8
 up 3
 down 8
 forward 2""" |> String.(split(_, "\n"))
-input_d2() = @pipe readlines("inputs/day_02.txt")
+input_d2() = readlines("inputs/day_02.txt")
 @assert typeof(ex_d2()) == typeof(input_d2())
+
+################
+#    Day 3
+################
+ex_d3() = @pipe """00100
+11110
+10110
+10111
+10101
+01111
+00111
+11100
+10000
+11001
+00010
+01010""" |> String.(split(_, "\n"))
+input_d3() = readlines("inputs/day_03.txt")
+@assert typeof(ex_d3()) == typeof(input_d3())
+
 
 end
