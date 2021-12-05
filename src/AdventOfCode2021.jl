@@ -4,7 +4,7 @@ using Printf: @sprintf
 @info "Advent of Code 2021, Dan Burns"
 @info ""
 
-for day in 1:-1:1
+for day in 25:-1:1
     filename = @sprintf("day_%02d.jl", day)
     path = joinpath(@__DIR__, filename)
     isfile(path) && println("Loading file: ", filename)
