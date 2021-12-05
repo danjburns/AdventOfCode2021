@@ -1,0 +1,9 @@
+name = "AdventOfCode2021"
+uuid = "0c58f320-2673-4dbd-93f4-227b523e3de6"
+authors = ["Dan Burns <37267067+danjburns@users.noreply.github.com>"]
+version = "0.1.0"
+
+[deps]
+JuliaFormatter = "98e50ef6-434e-11e9-1051-2b60c6c9e899"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
