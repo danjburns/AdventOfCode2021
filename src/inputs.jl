@@ -76,6 +76,22 @@ ex_d4() = @pipe """7,4,9,5,11,17,23,2,0,14,21,24,10,16,13,6,15,25,12,22,18,20,8,
 22 11 13  6  5
  2  0 12  3  7""" |> String.(split(_, "\n"))
 input_d4() = readlines("inputs/day_04.txt")
-@assert typeof(ex_d3()) == typeof(input_d4())
+@assert typeof(ex_d4()) == typeof(input_d4())
+
+################
+#    Day 5
+################
+ex_d5() = @pipe """0,9 -> 5,9
+8,0 -> 0,8
+9,4 -> 3,4
+2,2 -> 2,1
+7,0 -> 7,4
+6,4 -> 2,0
+0,9 -> 2,9
+3,4 -> 1,4
+0,0 -> 8,8
+5,5 -> 8,2""" |> String.(split(_, "\n"))
+input_d5() = readlines("inputs/day_05.txt")
+@assert typeof(ex_d5()) == typeof(input_d5())
 
 end
