@@ -104,5 +104,13 @@ input_d6() = @pipe readlines("inputs/day_06.txt") |>
                 parse.(Int, _)
 @assert typeof(ex_d6()) == typeof(input_d6())
 
-
+################
+#    Day 5
+################
+ex_d7() = parse.(Int, split("16,1,2,0,4,2,7,1,2,14", ","))
+input_d7() = @pipe readlines("inputs/day_07.txt")  |>
+                only |>
+                split(_, ",") |>
+                parse.(Int, _)
+@assert typeof(ex_d7()) == typeof(input_d7())
 end
