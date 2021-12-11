@@ -42,3 +42,15 @@ using AdventOfCode2021:day07
     @test day07.part2(day07.input) == 100220525
 end
 
+using AdventOfCode2021:day08
+@testset "Day 8" begin
+    @test_skip day08.part1(day08.input) == 0
+    @test_skip day08.part2(day08.input) == 0
+end
+
+using AdventOfCode2021:day09
+@testset "Day 9" begin
+    @test day09.part1(day09.input) == 524
+    @test day09.part2(day09.input) == 1235430
+end
+

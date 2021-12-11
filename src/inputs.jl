@@ -105,7 +105,7 @@ input_d6() = @pipe readlines("inputs/day_06.txt") |>
 @assert typeof(ex_d6()) == typeof(input_d6())
 
 ################
-#    Day 5
+#    Day 7
 ################
 ex_d7() = parse.(Int, split("16,1,2,0,4,2,7,1,2,14", ","))
 input_d7() = @pipe readlines("inputs/day_07.txt")  |>
@@ -113,4 +113,42 @@ input_d7() = @pipe readlines("inputs/day_07.txt")  |>
                 split(_, ",") |>
                 parse.(Int, _)
 @assert typeof(ex_d7()) == typeof(input_d7())
+
+################
+#    Day 8
+################
+ex_d8() = @pipe """be cfbegad cbdgef fgaecd cgeb fdcge agebfd fecdb fabcd edb |
+fdgacbe cefdb cefbgd gcbe
+edbfga begcd cbg gc gcadebf fbgde acbgfd abcde gfcbed gfec |
+fcgedb cgb dgebacf gc
+fgaebd cg bdaec gdafb agbcfd gdcbef bgcad gfac gcb cdgabef |
+cg cg fdcagb cbg
+fbegcd cbd adcefb dageb afcb bc aefdc ecdab fgdeca fcdbega |
+efabcd cedba gadfec cb
+aecbfdg fbg gf bafeg dbefa fcge gcbea fcaegb dgceab fcbdga |
+gecf egdcabf bgf bfgea
+fgeab ca afcebg bdacfeg cfaedg gcfdb baec bfadeg bafgc acf |
+gebdcfa ecba ca fadegcb
+dbcfg fgd bdegcaf fgec aegbdf ecdfab fbedc dacgb gdcebf gf |
+cefg dcbef fcge gbcadfe
+bdfegc cbegaf gecbf dfcage bdacg ed bedf ced adcbefg gebcd |
+ed bcgafe cdgba cbgef
+egadfb cdbfeg cegd fecab cgb gbdefca cg fgcdab egfdb bfceg |
+gbdfcae bgc cg cgb
+gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc |
+fgae cfgab fg bagce""" |> String.(split(_, "\n"))
+input_d8() = @pipe readlines("inputs/day_08.txt")
+@assert typeof(ex_d8()) == typeof(input_d8())
+
+################
+#    Day 9
+################
+ex_d9() = @pipe """2199943210
+3987894921
+9856789892
+8767896789
+9899965678""" |> String.(split(_, "\n"))
+input_d9() = readlines("inputs/day_09.txt")
+@assert typeof(ex_d9()) == typeof(input_d9())
+
 end
