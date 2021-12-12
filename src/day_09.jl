@@ -37,7 +37,7 @@ function part1(input)
 end
 
 @assert part1(ex) == 15
-@info "Day 8, Part 1:  $(part1(input))"
+@info "Day 9, Part 1:  $(part1(input))"
 
 # part 2 - depth first search using recursion
 function dfsearch!(visited, heightmap, idx)
@@ -69,6 +69,6 @@ function part2(input)
 end
 
 @assert part2(ex) == 1134
-@info "Day 8, Part 2:  $(part2(input))"
+@info "Day 9, Part 2:  $(part2(input))"
 
 end # module
