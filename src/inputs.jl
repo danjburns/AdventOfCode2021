@@ -167,4 +167,22 @@ ex_d10() = @pipe """[({(<(())[]>[[{[]{<()<>>
 input_d10() = readlines("inputs/day_10.txt")
 @assert typeof(ex_d10()) == typeof(input_d10())
 
+################
+#    Day 11
+################
+ex_d11() = @pipe """5483143223
+2745854711
+5264556173
+6141336146
+6357385478
+4167524645
+2176841721
+6882881134
+4846848554
+5283751526""" |> String.(split(_, "\n"))
+input_d11() = readlines("inputs/day_11.txt")
+@assert typeof(ex_d11()) == typeof(input_d11())
+
+
+
 end
