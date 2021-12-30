@@ -65,3 +65,14 @@ using AdventOfCode2021:day11
     @test day11.part1(day11.input) == 1719
     @test day11.part2(day11.input) == 232
 end
+
+using AdventOfCode2021:day12
+@testset "Day 12" begin
+    @test_broken day12.part1(day12.input) == 0
+    @test_broken day12.part2(day12.input) == 0
+end
+
+using AdventOfCode2021:day13
+@testset "Day 13" begin
+    @test day13.part1(day13.input) == 759
+end

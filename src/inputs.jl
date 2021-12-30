@@ -183,6 +183,47 @@ ex_d11() = @pipe """5483143223
 input_d11() = readlines("inputs/day_11.txt")
 @assert typeof(ex_d11()) == typeof(input_d11())
 
+################
+#    Day 12
+################
+ex_d12() = @pipe """start-A
+start-b
+A-c
+A-b
+b-d
+A-end
+b-end""" |> String.(split(_,"\n"))
+input_d12() = readlines("inputs/day_12.txt")
+@assert typeof(ex_d12()) == typeof(input_d12())
+
+################
+#    Day 13
+################
+ex_d13() = """6,10
+0,14
+9,10
+0,3
+10,4
+4,11
+6,0
+6,12
+4,1
+0,13
+10,12
+3,4
+3,0
+8,4
+1,10
+2,14
+8,10
+9,0
+
+fold along y=7
+fold along x=5"""
+input_d13() = read("inputs/day_13.txt", String)
+@assert typeof(ex_d13()) == typeof(input_d13())
+
+
 
 
 end
