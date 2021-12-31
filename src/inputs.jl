@@ -223,6 +223,29 @@ fold along x=5"""
 input_d13() = read("inputs/day_13.txt", String)
 @assert typeof(ex_d13()) == typeof(input_d13())
 
+################
+#    Day 14
+################
+ex_d14() = """NNCB
+
+CH -> B
+HH -> N
+CB -> H
+NH -> C
+HB -> C
+HC -> B
+HN -> C
+NN -> C
+BH -> H
+NC -> B
+NB -> B
+BN -> B
+BB -> N
+BC -> B
+CC -> N
+CN -> C"""
+input_d14() = read("inputs/day_14.txt", String)
+@assert typeof(ex_d14()) == typeof(input_d14())
 
 
 
