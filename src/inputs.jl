@@ -247,6 +247,19 @@ CN -> C"""
 input_d14() = read("inputs/day_14.txt", String)
 @assert typeof(ex_d14()) == typeof(input_d14())
 
-
+################
+#    Day 15
+################
+ex_d15() = @pipe """1163751742
+1381373672
+2136511328
+3694931569
+7463417111
+1319128137
+1359912421
+3125421639
+1293138521
+2311944581""" |> String.(split(_, "\n"))
+input_d15() = readlines("inputs/day_15.txt")
 
 end

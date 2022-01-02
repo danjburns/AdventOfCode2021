@@ -82,3 +82,9 @@ using AdventOfCode2021:day14
     @test day14.part1(day14.input) == 3587
     @test day14.part2(day14.input) == 3906445077999
 end
+
+using AdventOfCode2021:day15
+@testset "Day 15" begin
+    @test day15.part1(day15.input) == 745
+    @test day15.part2(day15.input) == 3002
+end
