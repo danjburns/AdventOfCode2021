@@ -261,5 +261,25 @@ ex_d15() = @pipe """1163751742
 1293138521
 2311944581""" |> String.(split(_, "\n"))
 input_d15() = readlines("inputs/day_15.txt")
+@assert typeof(ex_d15()) == typeof(input_d15())
+
+################
+#    Day 16
+################
+ex_d16() = @pipe """1163751742
+1381373672
+2136511328
+3694931569
+7463417111
+1319128137
+1359912421
+3125421639
+1293138521
+2311944581""" |> String.(split(_, "\n"))
+input_d16() = readlines("inputs/day_16.txt")
+@assert typeof(ex_d16()) == typeof(input_d16())
+
+
+
 
 end
